@@ -56,4 +56,14 @@ struct Grid {
             set(tile, point)
         }
     }
+
+    mutating func randomlyAdd() {
+        randomlySet(Tile.random())
+    }
+
+    mutating func randomlyAdd(count: Int) {
+        for _ in 0..count {
+            randomlyAdd()
+        }
+    }
 }
