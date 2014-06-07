@@ -14,7 +14,6 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Swifty8" customModuleProvider="target">
             <connections>
                 <outlet property="downButton" destination="BBQ-KK-7Ku" id="lY3-iN-SW8"/>
-                <outlet property="gridView" destination="bXE-dH-Ans" id="QWv-kt-56s"/>
                 <outlet property="leftButton" destination="7tX-ao-9uP" id="0Qy-By-7Fk"/>
                 <outlet property="rightButton" destination="qcX-Cu-qo6" id="aEH-8n-PzU"/>
                 <outlet property="upButton" destination="y2D-cr-7SM" id="yhQ-tE-C9f"/>
@@ -733,76 +732,15 @@
                             <action selector="upButtonPushed:" target="Voe-Tx-rLC" id="VES-UG-sNj"/>
                         </connections>
                     </button>
-                    <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrK-Kt-wrm">
-                        <rect key="frame" x="69" y="61" width="342" height="238"/>
-                        <clipView key="contentView" id="eep-P7-u5a">
-                            <rect key="frame" x="1" y="17" width="238" height="117"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="ayG-Ql-HXr" id="bXE-dH-Ans">
-                                    <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <size key="intercellSpacing" width="3" height="2"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                    <tableColumns>
-                                        <tableColumn identifier="AutomaticTableColumnIdentifier.0" width="116" minWidth="40" maxWidth="1000" id="P82-cw-T24">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                                <font key="font" metaFont="smallSystem"/>
-                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
-                                            </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="4TP-Ba-XT2">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                        </tableColumn>
-                                        <tableColumn identifier="AutomaticTableColumnIdentifier.1" width="218" minWidth="40" maxWidth="1000" id="wTq-To-qNf">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                                <font key="font" metaFont="smallSystem"/>
-                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
-                                            </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="KRS-F3-iwL">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                        </tableColumn>
-                                    </tableColumns>
-                                </tableView>
-                            </subviews>
-                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="lzF-2s-KJS">
-                            <rect key="frame" x="1" y="119" width="223" height="15"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="uTN-Qk-DsA">
-                            <rect key="frame" x="224" y="17" width="15" height="102"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                        <tableHeaderView key="headerView" id="ayG-Ql-HXr">
-                            <rect key="frame" x="0.0" y="0.0" width="238" height="17"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </tableHeaderView>
-                    </scrollView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ZrK-Kt-wrm" firstAttribute="top" secondItem="y2D-cr-7SM" secondAttribute="bottom" constant="20" symbolic="YES" id="0By-Pu-91l"/>
                     <constraint firstAttribute="bottom" secondItem="BBQ-KK-7Ku" secondAttribute="bottom" constant="20" symbolic="YES" id="4Hr-x1-O1f"/>
                     <constraint firstAttribute="trailing" secondItem="qcX-Cu-qo6" secondAttribute="trailing" constant="20" symbolic="YES" id="6hy-Z7-1Is"/>
                     <constraint firstAttribute="centerX" secondItem="y2D-cr-7SM" secondAttribute="centerX" id="CgZ-wt-2VD"/>
-                    <constraint firstItem="ZrK-Kt-wrm" firstAttribute="leading" secondItem="7tX-ao-9uP" secondAttribute="trailing" constant="8" symbolic="YES" id="KO3-uD-FQ9"/>
                     <constraint firstItem="7tX-ao-9uP" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="QIC-js-0hX"/>
                     <constraint firstItem="y2D-cr-7SM" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="bmV-V9-lwh"/>
                     <constraint firstAttribute="centerY" secondItem="7tX-ao-9uP" secondAttribute="centerY" id="hSU-TN-mJb"/>
                     <constraint firstAttribute="centerX" secondItem="BBQ-KK-7Ku" secondAttribute="centerX" id="iF3-NE-yhe"/>
-                    <constraint firstItem="qcX-Cu-qo6" firstAttribute="leading" secondItem="ZrK-Kt-wrm" secondAttribute="trailing" constant="8" symbolic="YES" id="igO-fi-Fdv"/>
-                    <constraint firstItem="BBQ-KK-7Ku" firstAttribute="top" secondItem="ZrK-Kt-wrm" secondAttribute="bottom" constant="20" symbolic="YES" id="lwF-qy-ohl"/>
                     <constraint firstAttribute="centerY" secondItem="qcX-Cu-qo6" secondAttribute="centerY" id="pIm-24-KnM"/>
                 </constraints>
             </view>
