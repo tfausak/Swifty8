@@ -692,6 +692,9 @@
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BBQ-KK-7Ku">
                         <rect key="frame" x="216" y="13" width="49" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="QdD-9y-utl"/>
+                        </constraints>
                         <buttonCell key="cell" type="push" title="↓" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wM6-hA-VDt">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -703,6 +706,9 @@
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qcX-Cu-qo6">
                         <rect key="frame" x="413" y="163" width="53" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="udO-vL-Hzx"/>
+                        </constraints>
                         <buttonCell key="cell" type="push" title="→" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7nF-JF-AwW">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -714,6 +720,9 @@
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y2D-cr-7SM">
                         <rect key="frame" x="216" y="312" width="49" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="d09-rz-LQY"/>
+                        </constraints>
                         <buttonCell key="cell" type="push" title="↑" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KIa-rf-1MP">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
