@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342F7E72194350790074CA67 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E71194350790074CA67 /* main.swift */; };
+		342F7E74194350790074CA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E73194350790074CA67 /* AppDelegate.swift */; };
+		342F7E76194350790074CA67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342F7E75194350790074CA67 /* Images.xcassets */; };
+		342F7E79194350790074CA67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342F7E77194350790074CA67 /* MainMenu.xib */; };
+		342F7E85194350790074CA67 /* Swifty8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E84194350790074CA67 /* Swifty8Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		342F7E7F194350790074CA67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F7E64194350790074CA67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 342F7E6B194350790074CA67;
+			remoteInfo = Swifty8;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		342F7E6C194350790074CA67 /* Swifty8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		342F7E70194350790074CA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		342F7E71194350790074CA67 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		342F7E73194350790074CA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		342F7E75194350790074CA67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		342F7E78194350790074CA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		342F7E7E194350790074CA67 /* Swifty8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swifty8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		342F7E83194350790074CA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		342F7E84194350790074CA67 /* Swifty8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty8Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		342F7E69194350790074CA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342F7E7B194350790074CA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342F7E63194350790074CA67 = {
+			isa = PBXGroup;
+			children = (
+				342F7E6E194350790074CA67 /* Swifty8 */,
+				342F7E81194350790074CA67 /* Swifty8Tests */,
+				342F7E6D194350790074CA67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		342F7E6D194350790074CA67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342F7E6C194350790074CA67 /* Swifty8.app */,
+				342F7E7E194350790074CA67 /* Swifty8Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		342F7E6E194350790074CA67 /* Swifty8 */ = {
+			isa = PBXGroup;
+			children = (
+				342F7E73194350790074CA67 /* AppDelegate.swift */,
+				342F7E75194350790074CA67 /* Images.xcassets */,
+				342F7E77194350790074CA67 /* MainMenu.xib */,
+				342F7E6F194350790074CA67 /* Supporting Files */,
+			);
+			path = Swifty8;
+			sourceTree = "<group>";
+		};
+		342F7E6F194350790074CA67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				342F7E70194350790074CA67 /* Info.plist */,
+				342F7E71194350790074CA67 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		342F7E81194350790074CA67 /* Swifty8Tests */ = {
+			isa = PBXGroup;
+			children = (
+				342F7E84194350790074CA67 /* Swifty8Tests.swift */,
+				342F7E82194350790074CA67 /* Supporting Files */,
+			);
+			path = Swifty8Tests;
+			sourceTree = "<group>";
+		};
+		342F7E82194350790074CA67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				342F7E83194350790074CA67 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		342F7E6B194350790074CA67 /* Swifty8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342F7E88194350790074CA67 /* Build configuration list for PBXNativeTarget "Swifty8" */;
+			buildPhases = (
+				342F7E68194350790074CA67 /* Sources */,
+				342F7E69194350790074CA67 /* Frameworks */,
+				342F7E6A194350790074CA67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifty8;
+			productName = Swifty8;
+			productReference = 342F7E6C194350790074CA67 /* Swifty8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		342F7E7D194350790074CA67 /* Swifty8Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342F7E8B194350790074CA67 /* Build configuration list for PBXNativeTarget "Swifty8Tests" */;
+			buildPhases = (
+				342F7E7A194350790074CA67 /* Sources */,
+				342F7E7B194350790074CA67 /* Frameworks */,
+				342F7E7C194350790074CA67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				342F7E80194350790074CA67 /* PBXTargetDependency */,
+			);
+			name = Swifty8Tests;
+			productName = Swifty8Tests;
+			productReference = 342F7E7E194350790074CA67 /* Swifty8Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		342F7E64194350790074CA67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Taylor Fausak";
+				TargetAttributes = {
+					342F7E6B194350790074CA67 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					342F7E7D194350790074CA67 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 342F7E6B194350790074CA67;
+					};
+				};
+			};
+			buildConfigurationList = 342F7E67194350790074CA67 /* Build configuration list for PBXProject "Swifty8" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 342F7E63194350790074CA67;
+			productRefGroup = 342F7E6D194350790074CA67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				342F7E6B194350790074CA67 /* Swifty8 */,
+				342F7E7D194350790074CA67 /* Swifty8Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		342F7E6A194350790074CA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342F7E76194350790074CA67 /* Images.xcassets in Resources */,
+				342F7E79194350790074CA67 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342F7E7C194350790074CA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		342F7E68194350790074CA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342F7E74194350790074CA67 /* AppDelegate.swift in Sources */,
+				342F7E72194350790074CA67 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342F7E7A194350790074CA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342F7E85194350790074CA67 /* Swifty8Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		342F7E80194350790074CA67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 342F7E6B194350790074CA67 /* Swifty8 */;
+			targetProxy = 342F7E7F194350790074CA67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		342F7E77194350790074CA67 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342F7E78194350790074CA67 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		342F7E86194350790074CA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		342F7E87194350790074CA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		342F7E89194350790074CA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Swifty8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		342F7E8A194350790074CA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Swifty8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		342F7E8C194350790074CA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swifty8.app/Contents/MacOS/Swifty8";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Swifty8Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		342F7E8D194350790074CA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swifty8.app/Contents/MacOS/Swifty8";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Swifty8Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		342F7E67194350790074CA67 /* Build configuration list for PBXProject "Swifty8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342F7E86194350790074CA67 /* Debug */,
+				342F7E87194350790074CA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342F7E88194350790074CA67 /* Build configuration list for PBXNativeTarget "Swifty8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342F7E89194350790074CA67 /* Debug */,
+				342F7E8A194350790074CA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		342F7E8B194350790074CA67 /* Build configuration list for PBXNativeTarget "Swifty8Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342F7E8C194350790074CA67 /* Debug */,
+				342F7E8D194350790074CA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 342F7E64194350790074CA67 /* Project object */;
+}
