@@ -38,4 +38,10 @@ struct Line {
 
         return indexes[randomInt(indexes.count)]
     }
+
+    mutating func set(tile: Tile, _ index: Int) {
+        assert(index < tiles.count)
+
+        tiles[index] = tile
+    }
 }

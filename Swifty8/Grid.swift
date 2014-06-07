@@ -44,4 +44,10 @@ struct Grid {
 
         return points[randomInt(points.count)]
     }
+
+    mutating func set(tile: Tile, point: Point) {
+        assert(point.y < lines.count)
+
+        lines[point.y].set(tile, point.x)
+    }
 }
