@@ -57,6 +57,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         gridView.maxNumberOfRows = game.width
         gridView.maxNumberOfColumns = game.height
+
+        // TODO: This is dumb. Why can't I just set the content to the list of
+        // tiles?
         gridView.content = game.tiles.map { $0.description }
     }
 }
