@@ -1,12 +1,14 @@
 struct Game {
+    let settings: Settings
     let grid: Grid
 
     init() {
-        self.init(Grid([Line([Tile(nil)])]))
+        self.init(settings: Settings())
     }
 
-    init(_ grid: Grid) {
-        self.grid = grid
+    init(settings: Settings) {
+        self.settings = settings
+        self.grid = Grid.empty(settings.width, settings.height)
     }
 
     func move(direction: Direction) {

@@ -12,4 +12,13 @@ struct Grid {
     var height: Int {
         return lines.count
     }
+
+    static func empty(width: Int, _ height: Int) -> Grid {
+        var lines: Line[] = []
+        for _ in 0..height {
+            lines.append(Line.empty(width))
+        }
+
+        return Grid(lines)
+    }
 }
