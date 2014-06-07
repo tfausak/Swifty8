@@ -35,4 +35,13 @@ struct Grid {
 
         return result
     }
+
+    func randomEmptyPoint() -> Point? {
+        let points = emptyPoints
+        if points.isEmpty {
+            return nil
+        }
+
+        return points[randomInt(points.count)]
+    }
 }

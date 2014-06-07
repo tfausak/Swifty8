@@ -29,4 +29,13 @@ struct Line {
 
         return result
     }
+
+    func randomEmptyIndex() -> Int? {
+        let indexes = emptyIndexes
+        if indexes.isEmpty {
+            return nil
+        }
+
+        return indexes[randomInt(indexes.count)]
+    }
 }
