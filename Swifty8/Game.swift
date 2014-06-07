@@ -9,6 +9,7 @@ struct Game {
     init(settings: Settings) {
         self.settings = settings
         self.grid = Grid.empty(settings.gridWidth, settings.gridHeight)
+        grid.randomlyAdd(settings.initialTileCount)
     }
 
     func move(direction: Direction) {
