@@ -45,9 +45,15 @@ struct Grid {
         return points[randomInt(points.count)]
     }
 
-    mutating func set(tile: Tile, point: Point) {
+    mutating func set(tile: Tile, _ point: Point) {
         assert(point.y < lines.count)
 
         lines[point.y].set(tile, point.x)
+    }
+
+    mutating func randomlySet(tile: Tile) {
+        if let point = randomEmptyPoint() {
+            set(tile, point)
+        }
     }
 }
