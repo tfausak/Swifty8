@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3410DC6019435E17007A62DF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410DC5F19435E17007A62DF /* Game.swift */; };
+		3410DC6219435E3A007A62DF /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410DC6119435E3A007A62DF /* Direction.swift */; };
 		342F7E72194350790074CA67 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E71194350790074CA67 /* main.swift */; };
 		342F7E74194350790074CA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E73194350790074CA67 /* AppDelegate.swift */; };
 		342F7E76194350790074CA67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342F7E75194350790074CA67 /* Images.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3410DC5F19435E17007A62DF /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3410DC6119435E3A007A62DF /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		342F7E6C194350790074CA67 /* Swifty8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		342F7E70194350790074CA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342F7E71194350790074CA67 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3410DC5E19435E02007A62DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3410DC5F19435E17007A62DF /* Game.swift */,
+				3410DC6119435E3A007A62DF /* Direction.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		342F7E63194350790074CA67 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 		342F7E6E194350790074CA67 /* Swifty8 */ = {
 			isa = PBXGroup;
 			children = (
+				3410DC5E19435E02007A62DF /* Models */,
 				342F7E73194350790074CA67 /* AppDelegate.swift */,
 				342F7E75194350790074CA67 /* Images.xcassets */,
 				342F7E77194350790074CA67 /* MainMenu.xib */,
@@ -209,7 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				342F7E74194350790074CA67 /* AppDelegate.swift in Sources */,
+				3410DC6019435E17007A62DF /* Game.swift in Sources */,
 				342F7E72194350790074CA67 /* main.swift in Sources */,
+				3410DC6219435E3A007A62DF /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +415,7 @@
 				342F7E8A194350790074CA67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		342F7E8B194350790074CA67 /* Build configuration list for PBXNativeTarget "Swifty8Tests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +424,7 @@
 				342F7E8D194350790074CA67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,8 @@
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
+
+    var game = Game()
                             
     @IBOutlet var window: NSWindow
 
@@ -26,15 +28,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func leftButtonPushed(sender : NSButton) {
+        game.move(Direction.Left)
     }
 
     @IBAction func downButtonPushed(sender : NSButton) {
+        game.move(Direction.Down)
     }
 
     @IBAction func rightButtonPushed(sender : NSButton) {
+        game.move(Direction.Right)
     }
     
     @IBAction func upButtonPushed(sender : NSButton) {
+        game.move(Direction.Up)
     }
 }
 
