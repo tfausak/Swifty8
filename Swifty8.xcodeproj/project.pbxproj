@@ -13,6 +13,7 @@
 		3410DC66194362D2007A62DF /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410DC65194362D2007A62DF /* Line.swift */; };
 		3410DC68194362E8007A62DF /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410DC67194362E8007A62DF /* Tile.swift */; };
 		3410DC6A1943644F007A62DF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410DC691943644F007A62DF /* Settings.swift */; };
+		341BBA681943B2A10059AE5E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BBA671943B2A10059AE5E /* Utilities.swift */; };
 		342F7E72194350790074CA67 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E71194350790074CA67 /* main.swift */; };
 		342F7E74194350790074CA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E73194350790074CA67 /* AppDelegate.swift */; };
 		342F7E76194350790074CA67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342F7E75194350790074CA67 /* Images.xcassets */; };
@@ -38,6 +39,7 @@
 		3410DC65194362D2007A62DF /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		3410DC67194362E8007A62DF /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		3410DC691943644F007A62DF /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		341BBA671943B2A10059AE5E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		342F7E6C194350790074CA67 /* Swifty8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		342F7E70194350790074CA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342F7E71194350790074CA67 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -102,11 +104,12 @@
 		342F7E6E194350790074CA67 /* Swifty8 */ = {
 			isa = PBXGroup;
 			children = (
-				34C8FA6D19439AE600C3670B /* Views */,
-				3410DC5E19435E02007A62DF /* Models */,
 				342F7E73194350790074CA67 /* AppDelegate.swift */,
 				342F7E75194350790074CA67 /* Images.xcassets */,
 				342F7E77194350790074CA67 /* MainMenu.xib */,
+				3410DC5E19435E02007A62DF /* Models */,
+				34C8FA6D19439AE600C3670B /* Views */,
+				341BBA671943B2A10059AE5E /* Utilities.swift */,
 				342F7E6F194350790074CA67 /* Supporting Files */,
 			);
 			path = Swifty8;
@@ -253,6 +256,7 @@
 				3410DC68194362E8007A62DF /* Tile.swift in Sources */,
 				3410DC66194362D2007A62DF /* Line.swift in Sources */,
 				3410DC6419436275007A62DF /* Grid.swift in Sources */,
+				341BBA681943B2A10059AE5E /* Utilities.swift in Sources */,
 				3410DC6219435E3A007A62DF /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

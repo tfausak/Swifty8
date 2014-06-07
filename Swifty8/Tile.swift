@@ -8,6 +8,16 @@ struct Tile {
     static func empty() -> Tile {
         return Tile(nil)
     }
+
+    static func random() -> Tile {
+        var value: Int? = 2
+
+        if randomInt(10) == 0 {
+            value = 4
+        }
+
+        return Tile(value)
+    }
 }
 
 extension Tile: Printable {
