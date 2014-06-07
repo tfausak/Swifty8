@@ -1,5 +1,40 @@
 import Cocoa
 
+func combine(array: Int[]) -> Int[] {
+    if array.count < 2 {
+        return array
+    }
+
+    return [array[0] + array[1]] + array[2..array.endIndex]
+}
+
+func compact<T>(array: T?[]) -> T[] {
+    var result: T[] = []
+
+    for optional in array {
+        if let element = optional {
+            result.append(element)
+        }
+    }
+    
+    return result
+}
+
+func group<T: Equatable>(var array: T[]) -> T[][] {
+    if array.isEmpty {
+        return []
+    }
+
+    let first = array.removeAtIndex(0)
+    var result = [first]
+
+    while !array.isEmpty && first == array[0] {
+        result.append(array.removeAtIndex(0))
+    }
+    
+    return [result] + group(array)
+}
+
 func log_2(var number: Int) -> Int {
     var result = 0
 
@@ -9,6 +44,17 @@ func log_2(var number: Int) -> Int {
     }
 
     return result
+}
+
+func pad<T>(var array: Array<T>, value: T, var count: Int) -> Array<T> {
+    count = count - array.count
+    if count < 0 {
+        count = 0
+    }
+
+    array.extend(Array(count: count, repeatedValue: value))
+    
+    return array
 }
 
 func randomInt(limit: Int) -> Int {

@@ -1,5 +1,5 @@
 struct Line {
-    let tiles: Tile[]
+    var tiles: Tile[]
 
     init(_ tiles: Tile[]) {
         self.tiles = tiles
@@ -50,6 +50,14 @@ struct Line {
     }
 
     mutating func shift() {
-        // TODO
+        let a: Int?[] = tiles.map { $0.value }
+        let b: Int[] = compact(a)
+        let c: Int[][] = group(b)
+        let d: Int[][] = c.map { combine($0) }
+        let e: Int[] = d.reduce([], +)
+        let f: Tile[] = e.map { Tile($0) }
+        let g: Tile[] = pad(f, Tile.empty(), tiles.count)
+
+        tiles = g
     }
 }
