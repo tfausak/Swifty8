@@ -36,4 +36,16 @@ struct Game {
     var score: Int {
         return grid.score
     }
+
+    var hasWon: Bool {
+        for tile in tiles {
+            if let value = tile.value {
+                if value > settings.maximumTileValue {
+                    return true
+                }
+            }
+        }
+
+        return false
+    }
 }

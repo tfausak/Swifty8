@@ -22,10 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var gridView : NSCollectionView
     
     @IBOutlet var scoreCell : NSTextFieldCell
-
-    // TODO: This should be unnecessary, but Xcode complains about bad access
-    // without it.
-    @IBOutlet var scoreField : NSTextField
+    @IBOutlet var winnerField : NSTextField
     
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         updateView()
@@ -69,6 +66,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         gridView.content = game.tiles.map { $0.description }
 
         scoreCell.title = "Score: \(game.score)"
+
+        winnerField.hidden = !game.hasWon
     }
 }
 
