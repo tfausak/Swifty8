@@ -18,6 +18,7 @@
 		342F7E76194350790074CA67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342F7E75194350790074CA67 /* Images.xcassets */; };
 		342F7E79194350790074CA67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342F7E77194350790074CA67 /* MainMenu.xib */; };
 		342F7E85194350790074CA67 /* Swifty8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E84194350790074CA67 /* Swifty8Tests.swift */; };
+		34C8FA6F19439AF700C3670B /* TileCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C8FA6E19439AF700C3670B /* TileCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		342F7E7E194350790074CA67 /* Swifty8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swifty8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		342F7E83194350790074CA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342F7E84194350790074CA67 /* Swifty8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty8Tests.swift; sourceTree = "<group>"; };
+		34C8FA6E19439AF700C3670B /* TileCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		342F7E6E194350790074CA67 /* Swifty8 */ = {
 			isa = PBXGroup;
 			children = (
+				34C8FA6D19439AE600C3670B /* Views */,
 				3410DC5E19435E02007A62DF /* Models */,
 				342F7E73194350790074CA67 /* AppDelegate.swift */,
 				342F7E75194350790074CA67 /* Images.xcassets */,
@@ -133,6 +136,14 @@
 				342F7E83194350790074CA67 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34C8FA6D19439AE600C3670B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34C8FA6E19439AF700C3670B /* TileCollectionView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 			files = (
 				342F7E74194350790074CA67 /* AppDelegate.swift in Sources */,
 				3410DC6019435E17007A62DF /* Game.swift in Sources */,
+				34C8FA6F19439AF700C3670B /* TileCollectionView.swift in Sources */,
 				3410DC6A1943644F007A62DF /* Settings.swift in Sources */,
 				342F7E72194350790074CA67 /* main.swift in Sources */,
 				3410DC68194362E8007A62DF /* Tile.swift in Sources */,
