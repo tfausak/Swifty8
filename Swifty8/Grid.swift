@@ -78,12 +78,16 @@ struct Grid {
     }
 
     mutating func rotateTo(direction: Direction) {
+        var times: Int
+
         switch direction {
-            case .Left: break
-            case .Down: rotate()
-            case .Right: rotate(); rotate()
-            case .Up: rotate(); rotate(); rotate()
+            case .Left: times = 0
+            case .Down: times = 1
+            case .Right: times = 2
+            case .Up: times = 3
         }
+
+        rotate(times)
     }
 
     mutating func shift() {
@@ -91,15 +95,29 @@ struct Grid {
     }
 
     mutating func rotateFrom(direction: Direction) {
+        var times: Int
+
         switch direction {
-            case .Left: break
-            case .Down: rotate(); rotate(); rotate()
-            case .Right: rotate(); rotate()
-            case .Up: rotate()
+            case .Left: times = 0
+            case .Down: times = 3
+            case .Right: times = 2
+            case .Up: times = 1
         }
+
+        rotate(times)
     }
 
     mutating func rotate() {
         // TODO
+    }
+
+    mutating func rotate(times: Int) {
+        for _ in 0..times {
+            rotate()
+        }
+    }
+
+    func canMove(direction: Direction) -> Bool {
+        return true // TODO
     }
 }

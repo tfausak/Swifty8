@@ -48,4 +48,8 @@ struct Line {
     var score: Int {
         return tiles.map { $0.score }.reduce(0, +)
     }
+
+    mutating func shift() {
+        // TODO
+    }
 }

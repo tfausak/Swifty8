@@ -18,7 +18,7 @@ struct Game {
     }
 
     func canMove(direction: Direction) -> Bool {
-        return true
+        return grid.canMove(direction)
     }
 
     var width: Int {
