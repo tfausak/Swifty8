@@ -8,7 +8,7 @@ struct Game {
 
     init(settings: Settings) {
         self.settings = settings
-        self.grid = Grid.empty(settings.width, settings.height)
+        self.grid = Grid.empty(settings.gridWidth, settings.gridHeight)
     }
 
     func move(direction: Direction) {
