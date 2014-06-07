@@ -6,7 +6,7 @@ struct Grid {
     }
 
     var width: Int {
-        return lines[0].count
+        return lines.isEmpty ? 0 : lines[0].count
     }
 
     var height: Int {

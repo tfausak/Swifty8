@@ -55,8 +55,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         rightButton.enabled = game.canMove(Direction.Right)
         upButton.enabled = game.canMove(Direction.Up)
 
-        gridView.maxNumberOfRows = game.grid.width
-        gridView.maxNumberOfColumns = game.grid.height
+        gridView.maxNumberOfRows = game.width
+        gridView.maxNumberOfColumns = game.height
     }
 }
 

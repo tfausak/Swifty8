@@ -17,4 +17,12 @@ struct Game {
     func canMove(direction: Direction) -> Bool {
         return false
     }
+
+    var width: Int {
+        return grid.width
+    }
+
+    var height: Int {
+        return grid.height
+    }
 }
