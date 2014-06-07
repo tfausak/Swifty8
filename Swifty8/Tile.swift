@@ -9,3 +9,9 @@ struct Tile {
         return Tile(nil)
     }
 }
+
+extension Tile: Printable {
+    var description: String {
+        return value ? value!.description : " "
+    }
+}

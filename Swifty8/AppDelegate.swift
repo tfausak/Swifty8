@@ -57,7 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         gridView.maxNumberOfRows = game.width
         gridView.maxNumberOfColumns = game.height
-        gridView.content = game.tiles.map { $0.value ? $0.value! : 0 }
+        gridView.content = game.tiles.map { $0.description }
     }
 }
 
