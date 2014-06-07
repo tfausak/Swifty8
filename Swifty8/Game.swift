@@ -1,6 +1,6 @@
 struct Game {
     let settings: Settings
-    let grid: Grid
+    var grid: Grid
 
     init() {
         self.init(settings: Settings())
@@ -12,11 +12,13 @@ struct Game {
         grid.randomlyAdd(settings.initialTileCount)
     }
 
-    func move(direction: Direction) {
+    mutating func move(direction: Direction) {
+        grid.move(direction)
+        grid.randomlyAdd()
     }
 
     func canMove(direction: Direction) -> Bool {
-        return false
+        return true
     }
 
     var width: Int {

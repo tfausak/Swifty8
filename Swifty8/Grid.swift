@@ -70,4 +70,36 @@ struct Grid {
     var score: Int {
         return lines.map { $0.score }.reduce(0, +)
     }
+
+    mutating func move(direction: Direction) {
+        rotateTo(direction)
+        shift()
+        rotateFrom(direction)
+    }
+
+    mutating func rotateTo(direction: Direction) {
+        switch direction {
+            case .Left: break
+            case .Down: rotate()
+            case .Right: rotate(); rotate()
+            case .Up: rotate(); rotate(); rotate()
+        }
+    }
+
+    mutating func shift() {
+        // TODO
+    }
+
+    mutating func rotateFrom(direction: Direction) {
+        switch direction {
+            case .Left: break
+            case .Down: rotate(); rotate(); rotate()
+            case .Right: rotate(); rotate()
+            case .Up: rotate()
+        }
+    }
+
+    mutating func rotate() {
+        // TODO
+    }
 }
