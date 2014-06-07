@@ -71,12 +71,12 @@
 		3410DC5E19435E02007A62DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3410DC5F19435E17007A62DF /* Game.swift */,
 				3410DC6119435E3A007A62DF /* Direction.swift */,
+				3410DC5F19435E17007A62DF /* Game.swift */,
 				3410DC6319436275007A62DF /* Grid.swift */,
 				3410DC65194362D2007A62DF /* Line.swift */,
-				3410DC67194362E8007A62DF /* Tile.swift */,
 				3410DC691943644F007A62DF /* Settings.swift */,
+				3410DC67194362E8007A62DF /* Tile.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";

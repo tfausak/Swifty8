@@ -55,8 +55,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         rightButton.enabled = game.canMove(Direction.Right)
         upButton.enabled = game.canMove(Direction.Up)
 
-        gridView.maxNumberOfRows = game.width
-        gridView.maxNumberOfColumns = game.height
+        gridView.maxNumberOfRows = game.height
+        gridView.maxNumberOfColumns = game.width
 
         // TODO: This is dumb. Why can't I just set the content to the list of
         // tiles?
