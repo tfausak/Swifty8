@@ -761,7 +761,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAt-TY-n0b">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAt-TY-n0b">
                         <rect key="frame" x="18" y="321" width="198" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="xBC-LA-R4y">
                             <font key="font" metaFont="system"/>
@@ -769,7 +769,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ss-3g-Z0o">
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3ss-3g-Z0o">
                         <rect key="frame" x="441" y="321" width="21" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="🎉" id="Ffn-Ag-C2A">
                             <font key="font" metaFont="system"/>
@@ -781,16 +781,20 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="BBQ-KK-7Ku" secondAttribute="bottom" constant="20" symbolic="YES" id="4Hr-x1-O1f"/>
                     <constraint firstAttribute="trailing" secondItem="qcX-Cu-qo6" secondAttribute="trailing" constant="20" symbolic="YES" id="6hy-Z7-1Is"/>
+                    <constraint firstItem="y2D-cr-7SM" firstAttribute="centerY" secondItem="3ss-3g-Z0o" secondAttribute="centerY" id="8bH-E6-052"/>
                     <constraint firstAttribute="centerX" secondItem="y2D-cr-7SM" secondAttribute="centerX" id="CgZ-wt-2VD"/>
                     <constraint firstItem="uVs-tD-TeY" firstAttribute="leading" secondItem="7tX-ao-9uP" secondAttribute="trailing" constant="8" symbolic="YES" id="KzB-MM-KKW"/>
+                    <constraint firstAttribute="trailing" secondItem="3ss-3g-Z0o" secondAttribute="trailing" constant="20" symbolic="YES" id="OdL-WF-qkB"/>
                     <constraint firstItem="7tX-ao-9uP" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="QIC-js-0hX"/>
                     <constraint firstItem="BBQ-KK-7Ku" firstAttribute="top" secondItem="uVs-tD-TeY" secondAttribute="bottom" constant="20" symbolic="YES" id="Rwy-cJ-r8x"/>
+                    <constraint firstItem="eAt-TY-n0b" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="Si1-fX-wLY"/>
                     <constraint firstItem="y2D-cr-7SM" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="bmV-V9-lwh"/>
                     <constraint firstAttribute="centerY" secondItem="7tX-ao-9uP" secondAttribute="centerY" id="hSU-TN-mJb"/>
                     <constraint firstAttribute="centerX" secondItem="BBQ-KK-7Ku" secondAttribute="centerX" id="iF3-NE-yhe"/>
                     <constraint firstItem="uVs-tD-TeY" firstAttribute="top" secondItem="y2D-cr-7SM" secondAttribute="bottom" constant="20" symbolic="YES" id="jtE-Qn-Vwz"/>
                     <constraint firstItem="qcX-Cu-qo6" firstAttribute="leading" secondItem="uVs-tD-TeY" secondAttribute="trailing" constant="8" symbolic="YES" id="pAb-Jq-OBM"/>
                     <constraint firstAttribute="centerY" secondItem="qcX-Cu-qo6" secondAttribute="centerY" id="pIm-24-KnM"/>
+                    <constraint firstItem="eAt-TY-n0b" firstAttribute="centerY" secondItem="y2D-cr-7SM" secondAttribute="centerY" id="zd7-rI-UAB"/>
                 </constraints>
             </view>
         </window>

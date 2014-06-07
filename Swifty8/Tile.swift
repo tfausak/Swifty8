@@ -20,11 +20,19 @@ struct Tile {
     }
 
     var rank: Int {
-        return 0
+        if let number = value {
+            return log_2(number)
+        } else {
+            return 0
+        }
     }
 
     var score: Int {
-        return 0
+        if let number = value {
+            return number * (rank - 1)
+        } else {
+            return 0
+        }
     }
 }
 

@@ -1,5 +1,16 @@
 import Cocoa
 
+func log_2(var number: Int) -> Int {
+    var result = 0
+
+    while number > 1 {
+        number /= 2
+        result += 1
+    }
+
+    return result
+}
+
 func randomInt(limit: Int) -> Int {
     return Int(rand()) % limit
 }
