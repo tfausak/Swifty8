@@ -13,6 +13,10 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Swifty8" customModuleProvider="target">
             <connections>
+                <outlet property="downButton" destination="BBQ-KK-7Ku" id="lY3-iN-SW8"/>
+                <outlet property="leftButton" destination="7tX-ao-9uP" id="0Qy-By-7Fk"/>
+                <outlet property="rightButton" destination="qcX-Cu-qo6" id="aEH-8n-PzU"/>
+                <outlet property="upButton" destination="y2D-cr-7SM" id="yhQ-tE-C9f"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>

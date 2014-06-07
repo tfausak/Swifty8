@@ -12,6 +12,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet var window: NSWindow
 
+    @IBOutlet var leftButton : NSButton
+    @IBOutlet var downButton : NSButton
+    @IBOutlet var rightButton : NSButton
+    @IBOutlet var upButton : NSButton
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application
