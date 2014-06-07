@@ -25,4 +25,14 @@ struct Grid {
     var tiles: Tile[] {
         return lines.map { $0.tiles }.reduce([], +)
     }
+
+    var emptyPoints: Point[] {
+        var result: Point[] = []
+
+        for (y, line) in enumerate(lines) {
+            result.extend(line.emptyIndexes.map { Point(x: $0, y: y) })
+        }
+
+        return result
+    }
 }

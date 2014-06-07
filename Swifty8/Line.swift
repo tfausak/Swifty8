@@ -17,4 +17,16 @@ struct Line {
 
         return Line(tiles)
     }
+
+    var emptyIndexes: Int[] {
+        var result: Int[] = []
+
+        for (index, tile) in enumerate(tiles) {
+            if !tile.value {
+                result.append(index)
+            }
+        }
+
+        return result
+    }
 }
