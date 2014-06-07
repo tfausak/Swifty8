@@ -14,6 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Swifty8" customModuleProvider="target">
             <connections>
                 <outlet property="downButton" destination="BBQ-KK-7Ku" id="lY3-iN-SW8"/>
+                <outlet property="gridView" destination="bXE-dH-Ans" id="QWv-kt-56s"/>
                 <outlet property="leftButton" destination="7tX-ao-9uP" id="0Qy-By-7Fk"/>
                 <outlet property="rightButton" destination="qcX-Cu-qo6" id="aEH-8n-PzU"/>
                 <outlet property="upButton" destination="y2D-cr-7SM" id="yhQ-tE-C9f"/>
