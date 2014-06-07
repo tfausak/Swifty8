@@ -21,6 +21,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
+    @IBAction func leftButtonPushed(sender : NSButton) {
+    }
 
+    @IBAction func downButtonPushed(sender : NSButton) {
+    }
+
+    @IBAction func rightButtonPushed(sender : NSButton) {
+    }
+    
+    @IBAction func upButtonPushed(sender : NSButton) {
+    }
 }
 
