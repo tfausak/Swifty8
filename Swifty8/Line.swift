@@ -44,10 +44,4 @@ struct Line {
 
         tiles[index] = tile
     }
-
-    mutating func randomlySet(tile: Tile) {
-        if let index = randomEmptyIndex() {
-            set(tile, index)
-        }
-    }
 }
