@@ -1,5 +1,5 @@
 struct Grid {
-    let lines: Line[]
+    var lines: Line[]
 
     init(_ lines: Line[]) {
         self.lines = lines
@@ -91,7 +91,15 @@ struct Grid {
     }
 
     mutating func shift() {
-        // TODO
+        var lines: Line[] = []
+
+        for line in self.lines {
+            var newLine = line
+            newLine.shift()
+            lines.append(newLine)
+        }
+
+        self.lines = lines
     }
 
     mutating func rotateFrom(direction: Direction) {
