@@ -21,4 +21,8 @@ struct Grid {
 
         return Grid(lines)
     }
+
+    var tiles: Tile[] {
+        return lines.map { $0.tiles }.reduce([], +)
+    }
 }

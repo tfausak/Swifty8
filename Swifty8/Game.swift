@@ -25,4 +25,8 @@ struct Game {
     var height: Int {
         return grid.height
     }
+
+    var tiles: Tile[] {
+        return grid.tiles
+    }
 }
