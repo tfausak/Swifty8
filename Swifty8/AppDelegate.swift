@@ -20,7 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var upButton : NSButton
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        // Insert code here to initialize your application
+        updateView()
     }
 
     func applicationWillTerminate(aNotification: NSNotification?) {
@@ -29,18 +29,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func leftButtonPushed(sender : NSButton) {
         game.move(Direction.Left)
+        updateView()
     }
 
     @IBAction func downButtonPushed(sender : NSButton) {
         game.move(Direction.Down)
+        updateView()
     }
 
     @IBAction func rightButtonPushed(sender : NSButton) {
         game.move(Direction.Right)
+        updateView()
     }
     
     @IBAction func upButtonPushed(sender : NSButton) {
         game.move(Direction.Up)
+        updateView()
+    }
+
+    func updateView() {
+        leftButton.enabled = game.canMove(Direction.Left)
+        downButton.enabled = game.canMove(Direction.Down)
+        rightButton.enabled = game.canMove(Direction.Right)
+        upButton.enabled = game.canMove(Direction.Up)
     }
 }
 
