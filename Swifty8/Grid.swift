@@ -66,4 +66,8 @@ struct Grid {
             randomlyAdd()
         }
     }
+
+    var score: Int {
+        return lines.map { $0.score }.reduce(0, +)
+    }
 }

@@ -21,6 +21,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet var gridView : NSCollectionView
     
+    @IBOutlet var scoreCell : NSTextFieldCell
+    @IBOutlet var scoreField : NSTextField
+    
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         updateView()
     }
@@ -61,6 +64,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // TODO: This is dumb. Why can't I just set the content to the list of
         // tiles?
         gridView.content = game.tiles.map { $0.description }
+
+        scoreCell.title = "Score: \(game.score)"
     }
 }
 

@@ -17,6 +17,7 @@
                 <outlet property="gridView" destination="eka-GS-xL6" id="oO3-dN-J7J"/>
                 <outlet property="leftButton" destination="7tX-ao-9uP" id="0Qy-By-7Fk"/>
                 <outlet property="rightButton" destination="qcX-Cu-qo6" id="aEH-8n-PzU"/>
+                <outlet property="scoreCell" destination="xBC-LA-R4y" id="Vgi-VC-NtK"/>
                 <outlet property="upButton" destination="y2D-cr-7SM" id="yhQ-tE-C9f"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -759,6 +760,14 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAt-TY-n0b">
+                        <rect key="frame" x="18" y="321" width="198" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="xBC-LA-R4y">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="BBQ-KK-7Ku" secondAttribute="bottom" constant="20" symbolic="YES" id="4Hr-x1-O1f"/>

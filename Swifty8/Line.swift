@@ -44,4 +44,8 @@ struct Line {
 
         tiles[index] = tile
     }
+
+    var score: Int {
+        return tiles.map { $0.score }.reduce(0, +)
+    }
 }

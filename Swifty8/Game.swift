@@ -30,4 +30,8 @@ struct Game {
     var tiles: Tile[] {
         return grid.tiles
     }
+
+    var score: Int {
+        return grid.score
+    }
 }

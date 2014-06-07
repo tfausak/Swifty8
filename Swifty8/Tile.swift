@@ -18,6 +18,14 @@ struct Tile {
 
         return Tile(value)
     }
+
+    var rank: Int {
+        return 0
+    }
+
+    var score: Int {
+        return 0
+    }
 }
 
 extension Tile: Printable {
