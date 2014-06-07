@@ -22,6 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var gridView : NSCollectionView
     
     @IBOutlet var scoreCell : NSTextFieldCell
+
+    // TODO: This should be unnecessary, but Xcode complains about bad access
+    // without it.
     @IBOutlet var scoreField : NSTextField
     
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
