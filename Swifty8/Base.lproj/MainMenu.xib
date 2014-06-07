@@ -725,11 +725,11 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="BBQ-KK-7Ku" secondAttribute="bottom" constant="20" id="4Hr-x1-O1f"/>
-                    <constraint firstAttribute="trailing" secondItem="qcX-Cu-qo6" secondAttribute="trailing" constant="20" id="6hy-Z7-1Is"/>
+                    <constraint firstAttribute="bottom" secondItem="BBQ-KK-7Ku" secondAttribute="bottom" constant="20" symbolic="YES" id="4Hr-x1-O1f"/>
+                    <constraint firstAttribute="trailing" secondItem="qcX-Cu-qo6" secondAttribute="trailing" constant="20" symbolic="YES" id="6hy-Z7-1Is"/>
                     <constraint firstAttribute="centerX" secondItem="y2D-cr-7SM" secondAttribute="centerX" id="CgZ-wt-2VD"/>
-                    <constraint firstItem="7tX-ao-9uP" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="QIC-js-0hX"/>
-                    <constraint firstItem="y2D-cr-7SM" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="bmV-V9-lwh"/>
+                    <constraint firstItem="7tX-ao-9uP" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="QIC-js-0hX"/>
+                    <constraint firstItem="y2D-cr-7SM" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="bmV-V9-lwh"/>
                     <constraint firstAttribute="centerY" secondItem="7tX-ao-9uP" secondAttribute="centerY" id="hSU-TN-mJb"/>
                     <constraint firstAttribute="centerX" secondItem="BBQ-KK-7Ku" secondAttribute="centerX" id="iF3-NE-yhe"/>
                     <constraint firstAttribute="centerY" secondItem="qcX-Cu-qo6" secondAttribute="centerY" id="pIm-24-KnM"/>
