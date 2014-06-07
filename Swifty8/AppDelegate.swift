@@ -19,6 +19,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var rightButton : NSButton
     @IBOutlet var upButton : NSButton
 
+    @IBOutlet var gridView : NSCollectionView
+    
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         updateView()
     }
