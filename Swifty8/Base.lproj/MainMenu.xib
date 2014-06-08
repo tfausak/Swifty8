@@ -802,6 +802,7 @@
                 <constraint firstAttribute="centerY" secondItem="J9n-nS-aqK" secondAttribute="centerY" id="9eW-fN-GK8"/>
                 <constraint firstAttribute="centerX" secondItem="J9n-nS-aqK" secondAttribute="centerX" id="oE5-vR-ZTK"/>
             </constraints>
+            <point key="canvasLocation" x="140" y="468"/>
         </view>
         <userDefaultsController representsSharedInstance="YES" id="Y69-xZ-KXT"/>
     </objects>
