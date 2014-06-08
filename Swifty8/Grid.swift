@@ -116,7 +116,12 @@ struct Grid {
     }
 
     mutating func rotate() {
-        // TODO
+        let a: Tile[][] = lines.map { $0.tiles }
+        let b: Tile[][] = transpose(a)
+        let c: Tile[][] = b.map { $0.reverse() }
+        let d: Line[] = c.map { Line($0) }
+
+        lines = d
     }
 
     mutating func rotate(times: Int) {
