@@ -14,7 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Swifty8" customModuleProvider="target">
             <connections>
                 <outlet property="downButton" destination="BBQ-KK-7Ku" id="lY3-iN-SW8"/>
-                <outlet property="gridView" destination="eka-GS-xL6" id="oO3-dN-J7J"/>
+                <outlet property="gridView" destination="awL-hy-Qux" id="WBD-Wh-JmZ"/>
                 <outlet property="leftButton" destination="7tX-ao-9uP" id="0Qy-By-7Fk"/>
                 <outlet property="rightButton" destination="qcX-Cu-qo6" id="aEH-8n-PzU"/>
                 <outlet property="scoreCell" destination="xBC-LA-R4y" id="Vgi-VC-NtK"/>
@@ -735,32 +735,14 @@
                             <action selector="upButtonPushed:" target="Voe-Tx-rLC" id="VES-UG-sNj"/>
                         </connections>
                     </button>
-                    <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVs-tD-TeY">
+                    <collectionView translatesAutoresizingMaskIntoConstraints="NO" id="awL-hy-Qux" customClass="TileCollectionView" customModule="Swifty8" customModuleProvider="target">
                         <rect key="frame" x="69" y="61" width="342" height="238"/>
-                        <clipView key="contentView" id="IoA-Le-b4z">
-                            <rect key="frame" x="1" y="1" width="248" height="158"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <collectionView id="eka-GS-xL6" customClass="TileCollectionView" customModule="Swifty8" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="248" height="158"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="secondaryBackgroundColor" name="controlAlternatingRowColor" catalog="System" colorSpace="catalog"/>
-                                    <connections>
-                                        <outlet property="itemPrototype" destination="OHa-5o-w3K" id="uOg-kA-LOq"/>
-                                    </connections>
-                                </collectionView>
-                            </subviews>
-                        </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="lFm-3P-DNE">
-                            <rect key="frame" x="1" y="144" width="233" height="15"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="drv-k4-MFn">
-                            <rect key="frame" x="234" y="1" width="15" height="143"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                    </scrollView>
+                        <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="secondaryBackgroundColor" name="controlAlternatingRowColor" catalog="System" colorSpace="catalog"/>
+                        <connections>
+                            <outlet property="itemPrototype" destination="OHa-5o-w3K" id="0vY-dQ-Z4C"/>
+                        </connections>
+                    </collectionView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAt-TY-n0b">
                         <rect key="frame" x="18" y="321" width="198" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="xBC-LA-R4y">
@@ -783,17 +765,17 @@
                     <constraint firstAttribute="trailing" secondItem="qcX-Cu-qo6" secondAttribute="trailing" constant="20" symbolic="YES" id="6hy-Z7-1Is"/>
                     <constraint firstItem="y2D-cr-7SM" firstAttribute="centerY" secondItem="3ss-3g-Z0o" secondAttribute="centerY" id="8bH-E6-052"/>
                     <constraint firstAttribute="centerX" secondItem="y2D-cr-7SM" secondAttribute="centerX" id="CgZ-wt-2VD"/>
-                    <constraint firstItem="uVs-tD-TeY" firstAttribute="leading" secondItem="7tX-ao-9uP" secondAttribute="trailing" constant="8" symbolic="YES" id="KzB-MM-KKW"/>
+                    <constraint firstItem="awL-hy-Qux" firstAttribute="leading" secondItem="7tX-ao-9uP" secondAttribute="trailing" constant="8" symbolic="YES" id="G6D-uv-IyT"/>
                     <constraint firstAttribute="trailing" secondItem="3ss-3g-Z0o" secondAttribute="trailing" constant="20" symbolic="YES" id="OdL-WF-qkB"/>
+                    <constraint firstItem="BBQ-KK-7Ku" firstAttribute="top" secondItem="awL-hy-Qux" secondAttribute="bottom" constant="20" symbolic="YES" id="PXX-pe-TTm"/>
                     <constraint firstItem="7tX-ao-9uP" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="QIC-js-0hX"/>
-                    <constraint firstItem="BBQ-KK-7Ku" firstAttribute="top" secondItem="uVs-tD-TeY" secondAttribute="bottom" constant="20" symbolic="YES" id="Rwy-cJ-r8x"/>
                     <constraint firstItem="eAt-TY-n0b" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="Si1-fX-wLY"/>
                     <constraint firstItem="y2D-cr-7SM" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="bmV-V9-lwh"/>
                     <constraint firstAttribute="centerY" secondItem="7tX-ao-9uP" secondAttribute="centerY" id="hSU-TN-mJb"/>
                     <constraint firstAttribute="centerX" secondItem="BBQ-KK-7Ku" secondAttribute="centerX" id="iF3-NE-yhe"/>
-                    <constraint firstItem="uVs-tD-TeY" firstAttribute="top" secondItem="y2D-cr-7SM" secondAttribute="bottom" constant="20" symbolic="YES" id="jtE-Qn-Vwz"/>
-                    <constraint firstItem="qcX-Cu-qo6" firstAttribute="leading" secondItem="uVs-tD-TeY" secondAttribute="trailing" constant="8" symbolic="YES" id="pAb-Jq-OBM"/>
                     <constraint firstAttribute="centerY" secondItem="qcX-Cu-qo6" secondAttribute="centerY" id="pIm-24-KnM"/>
+                    <constraint firstItem="awL-hy-Qux" firstAttribute="top" secondItem="y2D-cr-7SM" secondAttribute="bottom" constant="20" symbolic="YES" id="vbK-ql-LfT"/>
+                    <constraint firstItem="qcX-Cu-qo6" firstAttribute="leading" secondItem="awL-hy-Qux" secondAttribute="trailing" constant="8" symbolic="YES" id="vew-eM-z3D"/>
                     <constraint firstItem="eAt-TY-n0b" firstAttribute="centerY" secondItem="y2D-cr-7SM" secondAttribute="centerY" id="zd7-rI-UAB"/>
                 </constraints>
             </view>
