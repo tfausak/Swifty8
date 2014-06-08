@@ -41,3 +41,8 @@ extension Tile: Printable {
         return value ? value!.description : " "
     }
 }
+
+extension Tile: Equatable {}
+func ==(lhs: Tile, rhs: Tile) -> Bool {
+    return lhs.value == rhs.value
+}

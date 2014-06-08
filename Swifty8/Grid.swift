@@ -126,6 +126,19 @@ struct Grid {
     }
 
     func canMove(direction: Direction) -> Bool {
-        return true // TODO
+        var other = self
+        other.rotateTo(direction)
+
+        return other.canShift()
+    }
+
+    func canShift() -> Bool {
+        for line in lines {
+            if line.canShift() {
+                return true
+            }
+        }
+
+        return false
     }
 }

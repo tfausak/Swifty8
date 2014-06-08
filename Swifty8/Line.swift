@@ -60,4 +60,16 @@ struct Line {
 
         tiles = g
     }
+
+    func canShift() -> Bool {
+        var other = self
+        other.shift()
+
+        return self != other
+    }
+}
+
+extension Line: Equatable {}
+func ==(lhs: Line, rhs: Line) -> Bool {
+    return lhs.tiles == rhs.tiles
 }
