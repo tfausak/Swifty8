@@ -1,7 +1,7 @@
 import Swifty8
 import XCTest
 
-class TileTest: Swifty8Tests {
+class TileTests: Swifty8Tests {
     func testEmpty() {
         XCTAssertEqual(Tile.empty(), Tile(nil))
     }
