@@ -1,22 +1,16 @@
 import Swifty8
 import XCTest
 
-class TileTest: XCTestCase {
+class TileTest: Swifty8Tests {
     func testEmpty() {
-        let a = Tile.empty()
-        let b = Tile(nil)
-
-        XCTAssertEqual(a, b)
+        XCTAssertEqual(Tile.empty(), Tile(nil))
     }
 
     func testRandom() {
-        let a = Tile.random()
-        var b = Tile(2)
-        if a != b {
-            b = Tile(4)
-        }
-
-        XCTAssertEqual(a, b)
+        srand(0)
+        XCTAssertEqual(Tile.random(), Tile(4))
+        srand(1)
+        XCTAssertEqual(Tile.random(), Tile(2))
     }
 
     func testValue() {
@@ -34,12 +28,12 @@ class TileTest: XCTestCase {
         XCTAssertEqual(Tile(2_048).score, 20_480)
     }
 
-    func testDescription() {
+    func testPrintable() {
         XCTAssertEqual(Tile(nil).description, " ")
         XCTAssertEqual(Tile(2_048).description, "2048")
     }
 
-    func testEqual() {
+    func testEquatable() {
         let a = Tile(nil)
         let b = Tile(2_048)
 
