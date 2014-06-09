@@ -21,6 +21,7 @@
 		342F7E79194350790074CA67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342F7E77194350790074CA67 /* MainMenu.xib */; };
 		342F7E85194350790074CA67 /* Swifty8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F7E84194350790074CA67 /* Swifty8Tests.swift */; };
 		34C8FA6F19439AF700C3670B /* TileCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C8FA6E19439AF700C3670B /* TileCollectionView.swift */; };
+		34DA54B51945EB93007AD752 /* TileTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DA54B41945EB93007AD752 /* TileTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		342F7E83194350790074CA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342F7E84194350790074CA67 /* Swifty8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty8Tests.swift; sourceTree = "<group>"; };
 		34C8FA6E19439AF700C3670B /* TileCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileCollectionView.swift; sourceTree = "<group>"; };
+		34DA54B41945EB93007AD752 /* TileTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		342F7E81194350790074CA67 /* Swifty8Tests */ = {
 			isa = PBXGroup;
 			children = (
+				34DA54B31945EB82007AD752 /* Models */,
 				342F7E84194350790074CA67 /* Swifty8Tests.swift */,
 				342F7E82194350790074CA67 /* Supporting Files */,
 			);
@@ -150,6 +153,14 @@
 				34C8FA6E19439AF700C3670B /* TileCollectionView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		34DA54B31945EB82007AD752 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34DA54B41945EB93007AD752 /* TileTest.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				342F7E85194350790074CA67 /* Swifty8Tests.swift in Sources */,
+				34DA54B51945EB93007AD752 /* TileTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
