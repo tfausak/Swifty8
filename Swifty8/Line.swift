@@ -50,15 +50,34 @@ struct Line {
     }
 
     mutating func shift() {
-        let a: Int?[] = tiles.map { $0.value }
-        let b: Int[] = compact(a)
-        let c: Int[][] = group(b)
-        let d: Int[][] = c.map { combine($0) }
-        let e: Int[] = d.reduce([], +)
-        let f: Tile[] = e.map { Tile($0) }
-        let g: Tile[] = pad(f, Tile.empty(), tiles.count)
+        var tiles: Tile[] = []
+        var buffer: Tile? = nil
 
-        tiles = g
+        for (index, tile) in enumerate(self.tiles) {
+            if let value = tile.value {
+                if let other = buffer {
+                    if tile == other {
+                        tiles.append(Tile(value * 2))
+                        buffer = nil
+                    } else {
+                        tiles.append(other)
+                        buffer = tile
+                    }
+                } else {
+                    buffer = tile
+                }
+            }
+        }
+
+        if let tile = buffer {
+            tiles.append(tile)
+        }
+
+        while tiles.count < self.tiles.count {
+            tiles.append(Tile.empty())
+        }
+
+        self.tiles = tiles
     }
 
     func canShift() -> Bool {
